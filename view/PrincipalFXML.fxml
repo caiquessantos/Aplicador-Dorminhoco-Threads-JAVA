@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.controle">
+ <children>       
+  	  <ImageView fx:id="cenario" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../view/assets/cenario.png" />
+         </image>
+      </ImageView>
+  	  <ImageView fx:id="guia" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../view/assets/guia.png" />
+         </image>
+      </ImageView>
+  	  <ImageView fx:id="inicio" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../view/assets/inicio.png" />
+         </image>
+      </ImageView>
+  	  <ImageView fx:id="aplicador" pickOnBounds="true" preserveRatio="true" fitHeight="200.0" fitWidth="200.0">
+         <image>
+            <Image url="@../view/assets/aplicador.png" />
+         </image>
+      </ImageView>
+  	  <ImageView fx:id="aplicando" pickOnBounds="true" preserveRatio="true" fitHeight="200.0" fitWidth="200.0">
+         <image>
+            <Image url="@../view/assets/aplicando.png" />
+         </image>
+      </ImageView>      
+      <ImageView fx:id="magro1" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../view/assets/magro.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="magro2" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../view/assets/magro.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="magro3" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../view/assets/magro.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="magro4" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../view/assets/magro.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="magro5" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../view/assets/magro.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="magroAplicando" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../view/assets/magro.png" />
+         </image>
+      </ImageView>
+            <ImageView fx:id="magroFilaCheia" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../view/assets/magroCostas.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="forte" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../view/assets/forte.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="saindo1" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../view/assets/saindo1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fila" pickOnBounds="true" preserveRatio="true" fitHeight="150.0" fitWidth="150.0">
+         <image>
+            <Image url="@../view/assets/fila.png" />
+         </image>
+      </ImageView>
+            <ImageView fx:id="bomba" pickOnBounds="true" preserveRatio="true" fitHeight="150.0" fitWidth="150.0">
+         <image>
+            <Image url="@../view/assets/bomba.png" />
+         </image>
+      </ImageView>
+      <Button text="NEXT" onAction="#avancar" fx:id="botaoAvancar" layoutX="580.0" layoutY="600.0" prefHeight="50" prefWidth="100" style="-fx-border-color: #ffd24a; -fx-background-color: #ffd24a; -fx-text-fill: #800000; -fx-border-width: 3;">
+      </Button>   
+      <Button text="INICIAR" onAction="#iniciar" fx:id="botaoIniciar" layoutX="580.0" layoutY="600.0" prefHeight="50" prefWidth="100" style="-fx-border-color: #ffd24a; -fx-background-color: #ffd24a; -fx-text-fill: #800000; -fx-border-width: 3;">
+      </Button>
+
+      <Slider fx:id="velocidadeAplicacao" blockIncrement="3.0" layoutX="66.0" layoutY="680.0" majorTickUnit="1.0" max="800.0" min="50.0" minorTickCount="0" prefHeight="36.0" prefWidth="184.0" rotate="-180.0" value="575.0" />
+      <Slider fx:id="velocidadeGeracao" blockIncrement="3.0" layoutX="900.0" layoutY="680" majorTickUnit="1.0" max="800.0" min="200.0" minorTickCount="0" prefHeight="36.0" prefWidth="184.0" rotate="180.0" value="500.0" />      
+      
+ </children>
+</AnchorPane>
